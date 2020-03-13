@@ -30,7 +30,7 @@ twitter_username: _jasonblo
 github_username:  jblount12
 
 # Build settings
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
 
