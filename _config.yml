@@ -11,28 +11,47 @@
 # If you need help with YAML syntax, here are some quick references for you: 
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: Mage of Spades
-email: jasondblount@gmail.com
+title: Mage of Spades LLC
+subtitle: Your own personal Magento expert
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: _jasonblo
-github_username:  jblount12
+  This is the demo site for a Jekyll theme version of
+  HTML5 UP's sleek, responsive site template Prologue.
+author: Jason Blount
+email: jasondblount@gmail.com
+avatar: images/logo.png
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# You'll want to customize url and baseurl for your own site:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Social settings
+# Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
+twitter_url:
+facebook_url:
+googleplus_url:
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/jasonblount/
+github_url: https://github.com/jblount12
+pinterest_url:
+slack_url:
+dribbble_url:
+
+# Google Analytics Tracking ID goes here:
+google_analytics:
+
+# The following settings are NECESSARY for the Prologue theme to run:
+theme: jekyll-theme-prologue
+collections: [sections]
+
+#end theme settings
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
