@@ -8,6 +8,6 @@ order: 0
 icon: fa-home
 ---
 <header>
-    <h2 class="alt"><strong>Mage of Spades</strong> is <strong>Jason Blount</strong></h2>
+    <h2 class="alt"><strong>Jason Blount</strong> is the <strong>Mage of Spades</strong></h2>
     <p>I'm a 2x certified Magento developer with many years of experience. <br/>Let's build something amazing together!</p>
 </header>
