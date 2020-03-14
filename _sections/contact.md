@@ -5,7 +5,7 @@ order: 4
 icon: fa-envelope
 ---
 
-<p>Send me a message with your needs and I'll get back to you right away!</p>
+<p>Send me a message and I'll get back to you right away!</p>
 
 <form method="post" action="https://formspree.io/xlelgrly">
   <div class="row">
