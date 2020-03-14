@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Mage of Spades LLC is Jason Blount: Your personal Magento expert.
 author: Jason Blount
 email: jasondblount@gmail.com
-avatar: images/logo_grey.png
+avatar: images/logo.png
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
