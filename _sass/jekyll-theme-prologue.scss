@@ -232,6 +232,13 @@ section, article {
 		padding-left: 0.25em;
 		margin-left: 1.25em;
 	}
+
+	.row {
+		ul {
+			padding-left: 0;
+			margin-left: 0;
+		}
+	}
 }
 
 /* Image */
