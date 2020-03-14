@@ -7,4 +7,4 @@ icon: fa-magento
 icon-style: brands
 ---
 
-Information about Magento modules will be here soon!
+Information about my Magento modules will be here soon!
