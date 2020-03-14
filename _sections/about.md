@@ -10,10 +10,10 @@ icon: fa-user
             <a href="#" class="image fit"><img src="images/headshot.png" alt="Jason Blount" /></a>
         </div>
         <div class="row">
-            <div class="6u item">
+            <div class="6u">
                 <a href="{{ site.certification_url }}" class="image fit"><img src="images/big_professional_developer_m2.png" alt="Magento 2 Certified Professional Developer" /></a>
             </div>
-            <div class="6u item">
+            <div class="6u">
                 <a href="{{ site.certification_url }}" class="image fit"><img src="images/big_developer.png" alt="Magento 1 Certified Developer" /></a>
             </div>
         </div>
