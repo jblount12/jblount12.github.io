@@ -9,7 +9,7 @@ icon: fa-code
     <div class="4u 12u$(mobile)">
         <div class="item">
             <header>
-                <h2>Consulting</h2>
+                <h2 class="icon fa-chalkboard-teacher"> Consulting</h2>
             </header>
             <p>By working together I can help uncover pain points in your business processes as they relate to Magento and
             formulate a solution to make your company more efficient, secure, and reliable. I will develop a plan
@@ -21,7 +21,7 @@ icon: fa-code
     <div class="4u 12u$(mobile)">
         <div class="item">
             <header>
-                <h2>Development</h2>
+                <h2 class="icon fa-code-branch"> Development</h2>
             </header>
             <p>As a certified developer in both Magento 1 and 2, whatever you need done, I can get it done. Whether you need a
             new payment integration, a code audit, Magento security patches installed, data restructuring, CRM or inventory
@@ -31,7 +31,7 @@ icon: fa-code
     <div class="4u 12u$(mobile)">
         <div class="item">
             <header>
-                <h2>Leadership</h2>
+                <h2 class="icon fa-award"> Leadership</h2>
             </header>
             <p>Do you already have a developer or developers on your team, but lack a senior figure to guide them? Or maybe
             you have an offshore team but lack the resources to perform code reviews and take ownership of the technical
