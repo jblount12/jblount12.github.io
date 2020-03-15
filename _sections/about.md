@@ -30,7 +30,8 @@ icon: fa-user
         with many clients to determine exactly what their needs are by taking a deep dive into their business processes
         and needs and working together to formulate and implement the best possible solutions.</p>
         <p>I've worked with some of the top Magento agencies as a senior developer, team lead, technical lead,
-        architect, and mentor. I've also worked directly as a consultant with enterprise level clients. I'm certified in
-        both Magento 1 and Magento 2 and I look forward to hearing from you and accomplishing something great together!</p>
+        architect, and mentor. I've also worked directly as a consultant with enterprise level clients. I'm available 
+        for remote work, or locally in the Denver metro. I'm certified in both Magento 1 and Magento 2 and I look 
+        forward to hearing from you and accomplishing something great together!</p>
     </div>
 </div>
