@@ -2,7 +2,7 @@
 layout: page
 title: Services
 order: 3
-icon: fa-code
+icon: fa-check
 ---
 
 <div class="row">
@@ -21,7 +21,7 @@ icon: fa-code
     <div class="4u 12u$(mobile)">
         <div class="item">
             <header>
-                <h2 class="icon fa-code-branch"> Development</h2>
+                <h2 class="icon fa-code"> Development</h2>
             </header>
             <p>As a certified developer in both Magento 1 and 2, whatever you need done, I can get it done. Whether you need a
             new payment integration, a code audit, Magento security patches installed, data restructuring, CRM or inventory
