@@ -1,0 +1,58 @@
+---
+layout: page
+title: "Admin Multiship Module"
+order: 1
+icon: fa-check
+logo: images/multiship_logo.png
+logo-alt: "Admin Multiship"
+---
+
+<div class="row">
+    <div class="3u 12u$(mobile)">
+        <div class="item">
+            <a href="#" class="image"><img src="{{- page.logo | relative_url -}}" alt="{{- page.logo-alt -}}"></a>
+        </div>
+    </div>
+    <div class="9u 12u$(mobile)">
+        <p>The <strong>Admin Multiship</strong> module is an extension developed for the Magento Marketplace. Once
+            installed, it adds the ability to place multiship (multi-address) orders from Magento's admin panel. This is
+            a project developed as a solo venture in order to fulfil a missing functionality in Magento. The extension
+            is currently in the testing and finalization stages in order to be placed on the Magento Marketplace</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="12u">
+        <a href="#" class="image"><img src="/images/multiship/multiship_interface.png" alt="Admin Multiship Interface"></a>
+    </div>
+</div>
+<div class="row">
+    <div class="12u">
+        <p>This module provides an entirely new section in the Admin. It is based on the core order creation interface,
+            such that any modifications to the Magento order placement will also carry over to this module's placement
+            page. The key difference is that the order creation process is split into multiple steps allowing the admin
+            user to create multiple addresses for an order, each with its own order items. These addresses are shown in
+            a sidebar allowing for easy review and modification. Once the orders are complete, a single payment is taken
+            on a billing page, then all the orders are placed simultaneously.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="2u">
+        <a href="#" class="image"><img src="/images/multiship/multiship_files.png" alt="Admin Multiship File Structure"></a>
+    </div>
+    <div class="8u 12u$(mobile)">
+        <p>This extension ended up being over 3,000 lines of code over 50+ files. Key challenges included tracking and
+            management of multiple quotes and tying them all together into one interface. This was done by using a
+            database table and model to track multiship orders, and a joining table to connect multiship orders to
+            quotes.</p>
+        <p>The other major problem to overcome was to make the module agnostic to payment methods. That is, the module
+            should be able to work with any payment method without having any knowledge of said method. This was
+            accomplished by utilizing multishipping payment processor pools which payment methods could add their
+            processors to via dependency injection, which is typically already done for payment methods supporting
+            frontend multishipping. This allows any payment method to function without making any changes to the Admin
+            Multiship module.</p>
+    </div>
+    <div class="2u">
+        <a href="#" class="image"><img src="/images/multiship/multiship_files2.png" alt="Admin Multiship File Structure"></a>
+    </div>
+</div>
