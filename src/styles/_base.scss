@@ -51,13 +51,19 @@ sup, sub {
         max-width: 100%;
         border-radius: 5px;
     }
+    .mobile-wide {
+        grid-column: span 2;
+        @media (min-width: 550px) {
+            grid-column: span 1;
+        }
+    }
 }
 
 .row-span {
     grid-row: span 2;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 550px) {
     .grid-container { grid-template-columns: repeat(3, 1fr); }
 }
 
