@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 18px;
     line-height: 1.5;
     color: #555;
     font-family: 'Montserrat', sans-serif;
@@ -11,9 +11,10 @@ body {
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }
-h1, h2, h3, h4, stong {
-    margin-top: 1em;
-    padding-top: 1em;
+section {
+    padding-top: 50px;
+}
+h1, h2, h3, h4, strong {
     line-height: 1.25;
     color: #333;
 }
@@ -24,6 +25,7 @@ h2 {
     font-size: 2rem;
 }
 h3 {
+    margin-top: 0;
     font-size: 1.5rem;
 }
 h4 {
@@ -44,17 +46,29 @@ sup, sub {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
     img {
-        max-height: 180px;
+        max-width: 100%;
         border-radius: 5px;
     }
 }
 
-.grid-item-left {
-
+.row-span {
+    grid-row: span 2;
 }
 
-.grid-item-right {
+@media (min-width: 600px) {
+    .grid-container { grid-template-columns: repeat(3, 1fr); }
+}
+
+.item-left-align {
     text-align: left;
+}
+
+.column-span {
+    grid-column: span 2;
+}
+
+.spacer {
+    margin-top: 20px;
 }
