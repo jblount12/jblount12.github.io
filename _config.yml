@@ -1,8 +1,10 @@
 # Site settings
 title: Mage of Spades
 description: Mage of Spades is Jason Blount; your personal Magento expert
+
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+permalink: /:collection/:name
 
 # User settings
 username: Jason Blount
@@ -28,3 +30,8 @@ google-analytics:
   id: "UA-160707509-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
+
+collections:
+  projects:
+    output: true
+

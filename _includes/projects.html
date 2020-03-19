@@ -1,22 +1,39 @@
+{%- assign _projects = site.projects | sort: 'order' -%}
 <div class="user-details">
     <h1>Featured Projects</h1>
 </div>
-<div class="grid-container">
-    <div class="project-image mobile-wide">
-        <img alt="Admin Multiship" src="assets/images/multiship_logo.png"/>
+<!-- Posts List -->
+{%- for _project in _projects -%}
+    {%- capture _title -%}
+        <h3>{{- _project.title -}}</h3>
+    {%- endcapture -%}
+    {%- capture _logo -%}
+        {%- if _project.logo != "" -%}
+            <a href="{{- _project.url | absolute_url -}}"><img src="{{- _project.logo | relative_url -}}" alt="{{- _project.title -}}"/></a>
+        {%- endif -%}
+    {%- endcapture -%}
+    {%- capture _excerpt -%}<p>{{- _project.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
+    {%- capture _link -%}<a href="{{- _project.url | absolute_url -}}" class="project-link">Case Study</a>{%- endcapture -%}
+    {%- capture _type -%}<li>Type:&nbsp;{{- _project.type -}}</li>{%- endcapture -%}
+    {%- capture _platform -%}<li>Type:&nbsp;{{- _project.platform -}}</li>{%- endcapture -%}
+    {%- capture _role -%}<li>Type:&nbsp;{{- _project.role -}}</li>{%- endcapture -%}
+    {%- assign _content = _excerpt | append: _link -%}
+
+    <div class="grid-container">
+        <div class="project-image mobile-wide">
+            {{- _logo -}}
+        </div>
+        <div class="item-left-align column-span">
+            {{- _title -}}
+            <ul>
+                {{- _type -}}
+                {{- _platform -}}
+                {{- _role -}}
+            </ul>
+            {{- _content -}}
+        </div>
     </div>
-    <div class="item-left-align column-span">
-        <h3>Admin Multiship</h3>
-        <ul>
-            <li>Type: Backend Extension</li>
-            <li>Platform: Magento 2</li>
-            <li>Role: Solo Project</li>
-        </ul>
-        <p>An extension built for the Magento Marketplace adding multi address order creation to the admin panel. Built
-            with extensibility and payment method agnosticism.</p>
-        <a class="project-link" href="#">Case Study</a>
-    </div>
-</div>
+{%- endfor -%}
 <div class="grid-container">
   <div class="project-image mobile-wide">
     <img alt="Graeters" src="assets/images/graet.png"/>

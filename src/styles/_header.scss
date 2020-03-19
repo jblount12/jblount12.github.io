@@ -7,52 +7,57 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
   .particles-js-canvas-el {
-    width:100% !important;
-    height:100vh !important;
+    width: 100% !important;
+    height: 100vh !important;
   }
 }
 
 .header {
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color: #FFF;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
   .site-title {
     font-size: 50px;
     display: block;
     line-height: 1;
     color: #FFF;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       margin: 0;
       font-size: 100px;
     }
   }
+
   .site-description {
     font-size: 18px;
     display: block;
     line-height: 1;
     color: #FFF;
     margin-top: 10px;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       font-size: 40px;
     }
   }
+
   .headshot {
     display: flex;
     justify-content: center;
     text-align: center;
+
     img {
       border-radius: 50%;
       height: 150px;
       width: 150px;
       border: #FFF solid;
-      @media only screen and (min-width:$cut){
+      @media only screen and (min-width: $cut) {
         height: 200px;
         width: 200px;
       }
@@ -63,15 +68,16 @@
 .header-links {
   margin: 10px 0;
   text-align: center;
-  @media only screen and (min-width:$cut){
+  @media only screen and (min-width: $cut) {
     margin: 25px 0;
   }
+
   .link {
     color: #FFF;
     text-decoration: none;
     font-size: 15px;
     margin: 0 15px;
-    @media only screen and (min-width:$cut){
+    @media only screen and (min-width: $cut) {
       font-size: 20px;
       margin: 0 25px;
     }
@@ -82,6 +88,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
+
   .icon {
     text-align: center;
     color: #FFF;
@@ -93,15 +100,18 @@
     border-radius: 50%;
     border: 2px solid #FFF;
     transition: all .7s;
+
     &:hover {
       color: $main;
       background: #FFF;
     }
+
     &:active {
       color: $main;
       background: #FFF;
     }
-    @media only screen and (min-width:$cut) {
+
+    @media only screen and (min-width: $cut) {
       width: 35px;
       height: 35px;
       font-size: 35px;
@@ -120,24 +130,27 @@
   text-align: center;
   font-size: 30px;
   cursor: pointer;
+
   .icon {
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      fill: #fff;
-      -webkit-animation: pulse 1.3s infinite;
-      animation: pulse 1.3s infinite;
-      &:hover {
-        color: $sec;
-      }
-      &:active {
-        color: $sec;
-      }
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+
+    &:hover {
+      color: $sec;
+    }
+
+    &:active {
+      color: $sec;
+    }
   }
 }

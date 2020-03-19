@@ -1,10 +1,16 @@
 ---
 title: 404 Error
 layout: page
-icon: fa-unlink
 permalink: /404
 hide: true
 robots: noindex, nofollow
 canonical: false
 ---
-<p>The requested page could not be found.</p>
+<p>How did you end up here? This isn't a real page!</p>
+<p>Redirecting you to the <a href="{{- site.url | absolute_url -}}">homepage</a> now.</p>
+<script>
+    window.setTimeout(redirect, 3 * 1000);
+    function redirect() {
+        window.location.replace("{{- site.url | absolute_url -}}");
+    }
+</script>

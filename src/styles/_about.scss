@@ -5,6 +5,7 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+
   .item-left-align {
     text-align: center;
     @media (min-width: 550px) {
@@ -17,6 +18,7 @@
   img:first-of-type {
     margin-right: 10%;
   }
+
   img {
     max-width: 40%;
   }

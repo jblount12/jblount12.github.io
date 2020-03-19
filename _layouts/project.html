@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+<div class="top-nav">
+    <section id="page-header">
+        <div class="grid-container">
+            <div>
+                <h2><a aria-label="Back" href="{{- '/#projects' | absolute_url -}}">
+                    <i class="fa fa-arrow-left"></i>&nbsp;Projects
+                </a></h2>
+            </div>
+            <div>
+                <h2>{{ page.title }}</h2>
+            </div>
+        </div>
+    </section>
+</div>
+<section id="page-content">
+    {{ content }}
+</section>
+{% include footer.html %}
+</body>
