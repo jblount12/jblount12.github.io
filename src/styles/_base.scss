@@ -13,6 +13,13 @@ article, aside, figcaption, figure, footer, header, nav, section {
 }
 section {
     padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+
+    @media only screen and (min-width: $cut) {
+        width: 80%;
+    }
 }
 h1, h2, h3, h4, strong {
     line-height: 1.25;
@@ -46,7 +53,7 @@ sup, sub {
 }
 .grid-container {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 2em;
     img {
         max-width: 100%;
         border-radius: 5px;
@@ -57,14 +64,13 @@ sup, sub {
             grid-column: span 1;
         }
     }
+    @media (min-width: 550px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .row-span {
     grid-row: span 2;
-}
-
-@media (min-width: 550px) {
-    .grid-container { grid-template-columns: repeat(3, 1fr); }
 }
 
 .item-left-align {
@@ -73,8 +79,4 @@ sup, sub {
 
 .column-span {
     grid-column: span 2;
-}
-
-.spacer {
-    margin-top: 20px;
 }
