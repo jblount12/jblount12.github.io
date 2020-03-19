@@ -1,0 +1,58 @@
+---
+layout: project
+title: "Luxury Bazaar"
+order: 3
+logo: assets/images/luxury.png
+excerpt: A code audit which lead to a full data restructure and code optimization, vastly improving performance and usability.
+type: Code & Data Refactor
+platform: Magento 1
+role: Architect & Lead Developer
+---
+<div class="grid-container">
+    <div class="project-image mobile-wide">
+        <img src="{{- page.logo | relative_url -}}" alt="{{- page.title -}}">
+    </div>
+    <div class="item-left-align column-span">
+        <h3>Overview</h3>
+        <p>This project started as a code audit performed for the client to see if there was anything that could be done
+            to improve performance. I completed the audit, and in the process discovered that their data structure was
+            the primary obstacle related to their performance issues. I proposed a full data restructure and code
+            refactor, formulated a plan of action, then took the lead for all development, working together with a
+            project manager to lead a team of certified developers and writing much of the code myself. This project was
+            performed while working as an employee of a Magento Solutions Partner.</p>
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="full-span">
+        <h3>Project Details</h3>
+        <p>The client's business process had many unique needs which were not readily addressed from a stock Magento
+            installation. Inventory management was unique, as was the structure of how products were managed as a whole.
+            In addition, everything was connected to a desktop version of QuickBooks, and a previous development agency
+            had modified Magento's product data to fit with QuickBooks. The result was a hyper-inflated database which
+            would lock up frequently and grind the site to a halt.</p>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="project-image full-span">
+        <img src="/assets/images/lux/lux_browse.png" alt="Luxury Bazaar Category Page">
+    </div>
+</div>
+<div class="grid-container">
+    <div class="full-span">
+        <h3>Challenges</h3>
+        <p>Product data was restructured from a custom solution to one that cleanly leveraged existing Magento product
+            types. Doing so, however, required nearly all custom code to be refactored. Luckily, this provided us the
+            opportunity to optimize the code and utilize caching to increase performance. Product data also had to be
+            imported on a regular bases, as there were multiple sales channels and inventory had to be consolidated.
+            This was done through custom-made endpoints and queries which would regularly import and reindex the
+            data.</p>
+        <p>As a result of this restructure, the integration with QuickBooks had to be rewritten. I performed this
+            rewrite myself, and was able to create a module with full synchronization between Magento and QuickBooks. In
+            order to accommodate for downtime on the QB server, I built a queueing system which would make note of all
+            changes within the Magento data; including product creation/edits, order placements, inventory changes,
+            etc. This data would be queued, then sent to QB once ready. Data was transformed to QB standards during
+            synchronization rather that within the data as was previously done, allowing us to reduce the database size
+            by tens of gigabytes and increase performance in all aspects of the website.</p>
+    </div>
+</div>

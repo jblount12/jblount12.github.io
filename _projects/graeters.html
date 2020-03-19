@@ -1,0 +1,66 @@
+---
+layout: project
+title: "Graeters"
+order: 2
+logo: assets/images/graet.png
+excerpt: A full rebuild of an existing Magento 1 install for Magento 2. Included full data migration and extensive custom feature rewriting.
+type: M1 to M2 Migration
+platform: Magento 2
+role: Technical Lead
+---
+<div class="grid-container">
+    <div class="project-image mobile-wide">
+        <img src="{{- page.logo | relative_url -}}" alt="{{- page.title -}}">
+    </div>
+    <div class="item-left-align column-span">
+        <h3>Overview</h3>
+        <p>This project was a full <strong>migration</strong> from Magento 1 to Magento 2. I was the
+            <strong>technical lead</strong> for this project within a Magento Soltuions Partner, in charge of all
+            aspects of backend development and code-related oversight. I worked together with a project manager and a
+            lead frontend developer and directly managed a team of backend developers. I performed code reviews for all
+            backend code and oversaw deployments as well.</p>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="project-image full-span">
+        <img src="/assets/images/graet/graeters_cyo.png" alt="Graeters Website">
+    </div>
+</div>
+<div class="grid-container">
+    <div class="full-span">
+        <h3>Project Details</h3>
+        <p>Graeters already had an existing Magento 1 storefront with heavy customizations and both custom and
+            commercial extensions. The Graeters team also used this opportunity to do a full site redesign. However, my
+            task was backend related, so my primary focus was to work with my team on these aspects:</p>
+        <ul>
+            <li>Migrate all products, customers, and order data</li>
+            <li>Transfer all custom functionality and features</li>
+            <li>Optimize for best performance</li>
+            <li>Utilize industry best practices to ensure security</li>
+        </ul>
+    </div>
+</div>
+<div class="grid-container">
+    <div class="full-span">
+        <h3>Challenges</h3>
+        <p>The largest hurdle faced was to be found in the custom shipping containers and order splitting logic used by
+            the client. Due to selling perishable goods, products had to be shipped in specialty packages, with strict
+            limits as to the qty, weight, and product types. These packages also needed to be split into multiple orders
+            during checkout in order to be compatible with the client's internal processes. This was accomplished by
+            creating an admin interface for packages where an administrator could specify the exact rules for each
+            package and how it was to affect order splitting. We then created custom code which would split the order
+            into appropriate order addresses by leveraging Magento's multi-address checkout system. We then also built
+            the connections between these orders and the client's inventory management system by utilizing Magento's web
+            API and adding our packaging data into that.</p>
+        <p>The client also used a custom payment processor for their gift cards. For this, we wrote a new module
+            integrating Magento with the processor, then replaced the core Magento gift card account functionality with
+            our own custom classes which would, instead of using the internal database as Magento's default classes
+            would, make calls out to the processor's API and utilize their data rather than store our own.</p>
+
+    </div>
+</div>
+<div class="grid-container">
+    <div class="project-image full-span">
+        <img src="/assets/images/graet/graet_gifts.png" alt="Gift Card Customer Interface">
+    </div>
+</div>
