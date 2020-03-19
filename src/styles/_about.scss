@@ -5,6 +5,12 @@
 .user-details {
   text-align: center;
   margin: 5px auto;
+  .item-left-align {
+    text-align: center;
+    @media (min-width: 550px) {
+      text-align: left;
+    }
+  }
 }
 
 #about {
