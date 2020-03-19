@@ -9,6 +9,9 @@ username: Jason Blount
 user_title: Your personal Magento expert
 email: jasondblount@gmail.com
 
+logo: assets/images/logo.png
+favicon: assets/images/mos_logo.png
+
 certification_url: https://u.magento.com/certification/directory/dev/id/1696332
 twitter_url:
 facebook_url:
