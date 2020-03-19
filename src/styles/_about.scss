@@ -15,6 +15,9 @@
 
 #about {
   img:first-of-type {
-    margin-right: 12px;
+    margin-right: 10%;
+  }
+  img {
+    max-width: 40%;
   }
 }
