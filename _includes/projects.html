@@ -15,8 +15,8 @@
     {%- capture _excerpt -%}<p>{{- _project.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
     {%- capture _link -%}<a href="{{- _project.url | absolute_url -}}" class="project-link">Case Study</a>{%- endcapture -%}
     {%- capture _type -%}<li>Type:&nbsp;{{- _project.type -}}</li>{%- endcapture -%}
-    {%- capture _platform -%}<li>Type:&nbsp;{{- _project.platform -}}</li>{%- endcapture -%}
-    {%- capture _role -%}<li>Type:&nbsp;{{- _project.role -}}</li>{%- endcapture -%}
+    {%- capture _platform -%}<li>Platform:&nbsp;{{- _project.platform -}}</li>{%- endcapture -%}
+    {%- capture _role -%}<li>Role:&nbsp;{{- _project.role -}}</li>{%- endcapture -%}
     {%- assign _content = _excerpt | append: _link -%}
 
     <div class="grid-container">
