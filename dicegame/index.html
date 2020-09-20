@@ -1,29 +1,32 @@
 <html>
 <head>
-<head>
+</head>
 <body>
 <img id="die1"/><img id="die2"/>
 <script language="javascript">
 
-function getDieValue() {
-	return Math.floor(1 + Math.random() * 5);
-}
+    function getDieValue() {
+        return Math.floor(1 + Math.random() * 5);
+    }
 
-function rollDie(dieNum) {
-	let color = '';
-	if (dieNum == 1) {
-		color = 'r';
-	} else {
-		color = 'b';
-	}
-	document.getElementById('die'+dieNum).src = 'dice/' + color + getDieValue() + '.png';
-}
+    function rollDie(dieNum) {
+        let color = '';
+        if (dieNum == 1) {
+            color = 'r';
+        } else {
+            color = 'b';
+        }
+        document.getElementById('die' + dieNum).src = 'dice/' + color + getDieValue() + '.png';
+    }
 
-function rolldice() { 
-	for (i=0; i<10; i++){
-		setTimeout(() => { rollDie(1); rollDie(2); }, i * 100);
-	}
-}
+    function rolldice() {
+        for (i = 0; i < 10; i++) {
+            setTimeout(() => {
+                rollDie(1);
+                rollDie(2);
+            }, i * 100);
+        }
+    }
 </script>
 <br><br>
 <input type="button" value="Roll Dice" onclick="rolldice()">
