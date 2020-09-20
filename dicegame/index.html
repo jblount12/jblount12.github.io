@@ -14,7 +14,7 @@
         document.getElementById('die' + dieNum).src = 'dice/' + (dieNum === 1 ? 'r' : 'b') + getDieValue() + '.png';
     }
 
-    function rolldice() {
+    function rollDice() {
         for (let i = 0; i < 10; i++) {
             setTimeout(() => {
                 rollDie(1);
@@ -24,6 +24,6 @@
     }
 </script>
 <br><br>
-<input type="button" value="Roll Dice" onclick="rolldice()">
+<input type="button" value="Roll Dice" onclick="rollDice()">
 </body>
 </html>
