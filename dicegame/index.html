@@ -1,8 +1,9 @@
-<html>
+<html lang="en">
 <head>
+    <title>Dice Roller</title>
 </head>
 <body>
-<img id="die1"/><img id="die2"/>
+<img id="die1"/><img id="die2"/><img id="die3"/>
 <script language="javascript">
 
     function getDieValue() {
@@ -10,17 +11,11 @@
     }
 
     function rollDie(dieNum) {
-        let color = '';
-        if (dieNum == 1) {
-            color = 'r';
-        } else {
-            color = 'b';
-        }
-        document.getElementById('die' + dieNum).src = 'dice/' + color + getDieValue() + '.png';
+        document.getElementById('die' + dieNum).src = 'dice/' + (dieNum === 1 ? 'r' : 'b') + getDieValue() + '.png';
     }
 
     function rolldice() {
-        for (i = 0; i < 10; i++) {
+        for (let i = 0; i < 10; i++) {
             setTimeout(() => {
                 rollDie(1);
                 rollDie(2);
