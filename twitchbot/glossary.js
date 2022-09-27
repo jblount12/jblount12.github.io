@@ -201,6 +201,6 @@ switch (word) {
     case'outs':
     case'out':
         r = 'An out is any single card which if dealt, would give you the winning hand';
-        break
+        break;
 }
 r;
