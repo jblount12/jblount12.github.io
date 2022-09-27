@@ -2,7 +2,7 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     let word = urlParams.get('q').replace('-', '').replace(' ', '').toLowerCase();
-    let r = 'No definition found for ' + q;
+    let r = 'No definition found for ' + word;
     if (word === '') {
         r = 'Use !define (term) to look up the definition of anything you\'re unsure about.';
     }
@@ -207,5 +207,5 @@
             break;
     }
 
-    document.write(r)
+    document.write(r);
 </script>
