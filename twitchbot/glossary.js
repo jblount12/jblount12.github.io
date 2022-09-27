@@ -1,13 +1,14 @@
 let word = q.replace('-', '').replace(' ', '').toLowerCase();
 let r = 'No definition found for ' + q;
-if (word === '') {
+
+if (q === '') {
     r = "Use !define (term) to look up the definition of anything you're unsure about.";
 }
 
 switch (word) {
     case '3bet':
     case 'threebet':
-        r = 'A raise on top of a previous raise (bet, then raise, then 3bet)'
+        r = 'A raise on top of a previous raise (bet, then raise, then 3bet)';
         break;
     case '4bet':
     case 'fourbet':
