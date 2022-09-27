@@ -1,6 +1,6 @@
 let word = q.replace('-', '').replace(' ', '').toLowerCase();
 let r = 'No definition found for ' + q;
-if (q === '') {
+if (word === '') {
     r = 'Use !define (term) to look up the definition of anything you\'re unsure about.';
 }
 switch (word) {
