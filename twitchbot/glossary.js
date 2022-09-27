@@ -7,4 +7,4 @@ switch (word) {
         r = 'A 3bet is a raise on top of a previous raise (bet, then raise, then 3bet)'
 }
 
-document.write(r);
+r;
