@@ -165,6 +165,45 @@ switch (word) {
     case '69':
         r = 'Nice.';
         break;
+    case 'utg':
+    case 'underthegun':
+        r = 'Under The Gun: First to act preflop';
+        break;
+    case 'button':
+    case 'bu':
+        r = 'Button: The player with the dealer button right of the small blind';
+        break;
+    case 'cutoff':
+    case 'co':
+        r = 'Cutoff: The player right of the button';
+        break;
+    case 'hijack':
+    case 'hj':
+        r = 'Hijack: The player right of the Cutoff (2 right of the button)';
+        break;
+    case 'lojack':
+    case 'lj':
+        r = 'Lojack: The player right of the Hijack (3 right of the button)';
+        break;
+    case 'potodds':
+        r = 'When facing a bet: the amount to call divided by the amount you stand to win. If you win more often than this, the call is mathematically profitable';
+        break;
+    case 'set':
+        r = 'Making 3 of a kind using a pocket pair';
+        break;
+    case 'impliedodds':
+        r = 'Pot odds, but you take into account the amount you could win with future bets as well';
+        break;
+    case 'equity':
+        r = 'The portion of the pot you would win on average, determined by your odds of wining the hand';
+        break;
+    case 'foldequity':
+        r = 'The portion of the pot you would win on average by forcing your opponent to fold';
+        break;
+    case 'outs':
+    case 'out':
+        r = 'An out is any single card which if dealt, would give you the winning hand';
+        break;
 }
 
 r;
