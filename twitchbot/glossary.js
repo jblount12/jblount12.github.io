@@ -1,7 +1,7 @@
 let word = q.replace('-', '').replace(' ', '').toLowerCase();
 let r = 'No definition found for ' + q;
 if (word === '') {
-    r = 'Use !define (term) to look up the definition of anything you\'re unsure about.';
+    r = "Use !define (term) to look up the definition of anything you're unsure about.";
 }
 
 switch (word) {
@@ -139,7 +139,7 @@ switch (word) {
         break;
     case 'sng':
     case 'stt':
-        r = 'Sit \'n Go: A tournament (typically one table) with a limited number of entries which begins whenever enough people register';
+        r = "Sit 'n Go: A tournament (typically one table) with a limited number of entries which begins whenever enough people register";
         break;
     case 'reg':
         r = 'Someone who plays on a regular basis';
