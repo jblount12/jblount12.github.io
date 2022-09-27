@@ -161,6 +161,9 @@ switch (word) {
     case 'short':
         r = 'Having a small number of chips relative to the blind amounts';
         break;
+    case '69':
+        r = 'Nice.';
+        break;
 }
 
 r;
