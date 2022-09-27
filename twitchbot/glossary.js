@@ -16,6 +16,7 @@ switch (word) {
     case 'allin':
     case 'jam':
     case 'shove':
+    case 'push':
         r = 'Wagering all of your remaining chips';
         break;
     case 'suckout':
@@ -139,6 +140,26 @@ switch (word) {
     case 'sng':
     case 'stt':
         r = 'Sit \'n Go: A tournament (typically one table) with a limited number of entries which begins whenever enough people register';
+        break;
+    case 'reg':
+        r = 'Someone who plays on a regular basis';
+        break;
+    case 'satellite':
+    case 'sat':
+    case 'satty':
+        r = 'A satellite is a tournament awarding tickets to a higher buy-in tournament, rather than a cash prize';
+        break;
+    case 'turbo':
+        r = 'A tournament with a fast structure and shorter running time than a regular tournament';
+        break;
+    case 'deep':
+    case 'deepstack':
+    case 'deekstacked':
+        r = 'Having a lot of chips relative to the blind amounts';
+        break;
+    case 'shallow':
+    case 'short':
+        r = 'Having a small number of chips relative to the blind amounts';
         break;
 }
 
